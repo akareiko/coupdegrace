@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/app/components/3d-card";
 import Link from "next/link";
+import wall from "@/app/wall.jpg"
 
 const ThreeDCardDemo = () => {
   return (
@@ -24,7 +25,7 @@ const ThreeDCardDemo = () => {
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src=""
+            src={wall}
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
