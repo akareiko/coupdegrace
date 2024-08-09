@@ -1,14 +1,19 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "@/app/components/navbar-menu";
+import {
+  HoveredLink,
+  Menu,
+  MenuItem,
+  ProductItem,
+} from "@/app/components/navbar-menu";
 import { cn } from "@/lib/utils";
-import wall from "@/app/wall.jpg"
+import wall from "@/app/wall.jpg";
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("w-[40vh] top-10 inset-x-0 max-w-2xl mx-auto z-50 p-5", className)}
+      className={cn("w-[40vw] top-10 inset-x-0 mx-auto z-50 p-5", className)}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="home">
@@ -57,6 +62,6 @@ const Navbar = ({ className }: { className?: string }) => {
       </Menu>
     </div>
   );
-}
+};
 
 export default Navbar;

@@ -13,7 +13,8 @@ import MyDropzone from "@/app/components/dragndrop"
 export default function Home() {
     return (
       <main className="min-h-screen p-5">
-        <div class="h-[70vh] overflow-visible -mt-[10vh]">
+        <div class="h-[100vh] overflow-visible -mt-[10vh]">
+        {/* <div class="h-[100vh] overflow-visible scale-150"> */}
             <Kek/>
         </div>
         <div class="flex justify-center">
