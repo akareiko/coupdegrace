@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 const Kek = () => {
   return (
     <div>
-      <Spline scene="https://prod.spline.design/CyKlqjTAf1qf1HTX/scene.splinecode"/>
+      <Spline scene="https://prod.spline.design/YTzpPp0MgBHuZS1v/scene.splinecode"/>
     </div>
   );
 };
