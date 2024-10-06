@@ -21,6 +21,7 @@ export default function Home() {
             <div className="w-[40vw] bg-black rounded-2xl border-2 border-white border-dashed p-5 h-[10vh] flex justify-center items-center text-center">
                 <MyDropzone/>
             </div>
+            <S3UploadForm/>
         </div>
       </main>
     );
