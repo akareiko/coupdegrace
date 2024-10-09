@@ -1,12 +1,13 @@
 "use client";
 import { useState } from "react";
+import MyDropzone from "./dragndrop"; // Assuming it's in the same folder
 
 const UploadForm = () => {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
+  const handleFileSelect = (file) => {
+    setFile(file); // This will set the file selected from MyDropzone
   };
 
   const handleSubmit = async (e) => {
@@ -30,18 +31,25 @@ const UploadForm = () => {
       console.log(error);
       setUploading(false);
     }
-  }
+  };
 
   return (
     <>
-      <h1>Upload Files to S3 Bucket</h1>
+    <div>
+      <h1 className="text-white">Upload Files to S3 Bucket</h1>
+
+      <MyDropzone onFileSelect={handleFileSelect} />
 
       <form onSubmit={handleSubmit}>
-        <input type="file" accept="image/*" onChange={handleFileChange} />
-        <button type="submit" disabled={!file || uploading}>
+        <button 
+          type="submit" 
+          disabled={!file || uploading}
+          className={`mt-4 px-4 py-2 text-white ${!file || uploading ? "bg-gray-400" : "bg-blue-500"} rounded`}
+        >
           {uploading ? "Uploading..." : "Upload"}
         </button>
       </form>
+      </div>
     </>
   );
 };

@@ -18,10 +18,7 @@ export default function Home() {
             <Kek/>
         </div>
         <div class="flex justify-center">
-            <div className="w-[40vw] bg-black rounded-2xl border-2 border-white border-dashed p-5 h-[10vh] flex justify-center items-center text-center">
-                <MyDropzone/>
-            </div>
-            {/* <S3UploadForm/> */}
+            <S3UploadForm/>
         </div>
       </main>
     );

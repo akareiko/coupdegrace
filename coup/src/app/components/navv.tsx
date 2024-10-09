@@ -24,14 +24,23 @@ const Navbar = ({ className }: { className?: string }) => {
             <HoveredLink href="/branding">end</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="run">
+        {/* <MenuItem setActive={setActive} active={active} item="run">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/upload">upload</HoveredLink>
-            <HoveredLink href="/status">status</HoveredLink>
             <HoveredLink href="/download">download</HoveredLink>
           </div>
+        </MenuItem> */}
+        <HoveredLink href="/upload">run</HoveredLink>
+        <MenuItem setActive={setActive} active={active} item="learn">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/upload">web development</HoveredLink>
+            <HoveredLink href="/download">data preprocessing</HoveredLink>
+            <HoveredLink href="/download">model building</HoveredLink>
+            <HoveredLink href="/download">visualization</HoveredLink>
+          </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="about">
+        <HoveredLink href="/signin">sign in</HoveredLink>
+        {/* <MenuItem setActive={setActive} active={active} item="about">
           <div className="flex items-center space-x-4">
             <ProductItem
               title="Web Development"
@@ -58,14 +67,14 @@ const Navbar = ({ className }: { className?: string }) => {
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="sign in">
+        </MenuItem> */}
+        {/* <MenuItem setActive={setActive} active={active} item="sign in">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/signin">one-time</HoveredLink>
             <HoveredLink href="/status">email</HoveredLink>
             <HoveredLink href="/download">google</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
       </Menu>
     </div>
   );
