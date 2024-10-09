@@ -59,6 +59,13 @@ const Navbar = ({ className }: { className?: string }) => {
             />
           </div>
         </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="sign in">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/signin">one-time</HoveredLink>
+            <HoveredLink href="/status">email</HoveredLink>
+            <HoveredLink href="/download">google</HoveredLink>
+          </div>
+        </MenuItem>
       </Menu>
     </div>
   );
