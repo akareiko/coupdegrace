@@ -10,9 +10,9 @@ const HeroScrollDemo = () => {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-white">
+            <h1 className="text-4xl  text-white font-sans">
               graduation project for team<br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+              <span className="text-4xl md:text-[6rem]  mt-1 leading-none font-sans">
                 Coup de Grace
               </span>
             </h1>

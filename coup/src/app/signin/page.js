@@ -1,13 +1,12 @@
 "use client";
 
-import RegistrationForm from "../components/login";
 import ThreeDCardDemo from "../components/Card"
+import ThreeDCardDemoTwo from "../components/CardTwo";
 
 export default function Home() {
     return (
       <main className="min-h-screen p-5">
-        <RegistrationForm></RegistrationForm>
-        <ThreeDCardDemo></ThreeDCardDemo>
+        <ThreeDCardDemoTwo></ThreeDCardDemoTwo>
       </main>
     );
   }

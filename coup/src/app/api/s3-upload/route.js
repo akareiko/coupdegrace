@@ -29,7 +29,6 @@ async function uploadFileToS3(file, fileName) {
 
 export async function POST(request) {
 	try {
-
 		const formData = await request.formData();
 		const file = formData.get("file");
 

@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Courier New', 'Courier', 'monospace'], // Customize the font family
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
