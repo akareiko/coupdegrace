@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
-import S3UploadForm from '@/app/components/S3UploadForm';
-import Card from '@/app/components/Card';
 import { Vortex } from "@/app/components/vortex";
-import Main from "@/app/components/main";
 import HeroScrollDemo from "@/app/components/scroll";
 import LayoutGridDemo from "@/app/components/bento";
 

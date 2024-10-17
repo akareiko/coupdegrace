@@ -13,10 +13,7 @@ const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn(
-        "w-[40vw] top-10 inset-x-0 mx-auto z-50 p-5 font-sans",
-        className
-      )}
+      className={cn("w-[40vw] inset-x-0 mx-auto z-50 p-2 font-sans", className)}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="home">
@@ -43,7 +40,8 @@ const Navbar = ({ className }: { className?: string }) => {
           </div>
         </MenuItem>
         {/* <HoveredLink href="/niiviewer">viewer</HoveredLink> */}
-        <HoveredLink href="/signin">sign in</HoveredLink>
+        <HoveredLink href="/visualization">visualization</HoveredLink>
+        <HoveredLink href="/signin">profile</HoveredLink>
         {/* <MenuItem setActive={setActive} active={active} item="about">
           <div className="flex items-center space-x-4">
             <ProductItem
@@ -72,7 +70,7 @@ const Navbar = ({ className }: { className?: string }) => {
             />
           </div>
         </MenuItem> */}
-        {/* <MenuItem setActive={setActive} active={active} item="sign in">
+        {/* <MenuItem setActive={setActive} active={active} item="profile">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/signin">one-time</HoveredLink>
             <HoveredLink href="/status">email</HoveredLink>

@@ -2,7 +2,7 @@
 import React from "react";
 import { ContainerScroll } from "@/app/components/container-scroll-animation";
 import Image from "next/image";
-import tissue from "@/app/tissue.jpg"
+import tissue from "@/app/resources/tissue.jpg"
 
 const HeroScrollDemo = () => {
   return (

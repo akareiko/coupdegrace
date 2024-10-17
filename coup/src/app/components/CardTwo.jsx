@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from 'react';
 import { CardBody, CardContainer, CardItem } from "@/app/components/3d-card";
 import Link from "next/link";
-import wall from "@/app/wall.jpg";
+
 
 const ThreeDCardDemoTwo = () => {
   // Registration form state
@@ -21,7 +21,7 @@ const ThreeDCardDemoTwo = () => {
   
     // Prepare the data to send, including the anonymousUserId
     const userData = {
-      anonymousUserId: anonymousUserId,  // Add the anonymous user ID to the request
+      anonymousUserId: anonymousUserId, // Add the anonymous user ID to the request
       username: username,
       password: password
     };
@@ -51,6 +51,8 @@ const ThreeDCardDemoTwo = () => {
     <h2 className="text-lg font-bold dark:text-white" style={{ fontSize: '24px' }}>register</h2>
   </div>
   <form onSubmit={handleSubmit}>
+  <div className="mb-4">
+    </div>
     <div className="mb-4">
       <label htmlFor="username" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300">
         username:
@@ -111,6 +113,8 @@ const ThreeDCardDemoTwo = () => {
       </CardBody>
     </CardContainer>
   );
+
+  
 }
 
 export default ThreeDCardDemoTwo;

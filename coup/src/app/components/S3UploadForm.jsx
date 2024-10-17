@@ -7,7 +7,6 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/app/components/3d-card";
 import Link from "next/link";
-import wall from "@/app/wall.jpg"
 
 const UploadForm = () => {
   const [file, setFile] = useState(null);

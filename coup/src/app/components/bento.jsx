@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "@/app/components/layout-grid";
-import brains from "@/app/brains.jpg"
 
 const LayoutGridDemo = () => {
   return (
