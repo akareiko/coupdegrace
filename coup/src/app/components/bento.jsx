@@ -4,7 +4,7 @@ import { LayoutGrid } from "@/app/components/layout-grid";
 
 const LayoutGridDemo = () => {
   return (
-    <div className="h-screen py-20 w-full">
+    <div className="h-screen py-20 w-full" id="second">
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -15,11 +15,11 @@ export default LayoutGridDemo;
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white font-sans">
         Diagnostic Accuracy and Biomarkers
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 font-sans">
         MRI has been shown to be effective in detecting PD-related brain changes, such as iron accumulation in the substantia nigra or changes in brain volume
       </p>
     </div>
@@ -29,11 +29,11 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white font-sans">
       Dataset
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 font-sans">
       The dataset for our Parkinson’s Disease Prediction Model project is sourced
 
 from the Parkinson’s Progression Markers Initiative (PPMI), a comprehen-
@@ -46,11 +46,11 @@ sion of Parkinson’s Disease
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white font-sans">
       Parkinson’s disease
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 font-sans">
          is the second most common neurodegenerative dis-
         order and the most common movement-related brain disease
       </p>
@@ -60,11 +60,11 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white font-sans">
         Neural Network
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 font-sans">
       By harnessing the power of AI to analyze MRI im-
 ages, there’s potential to revolutionize the diagnostic process, enabling more
 
