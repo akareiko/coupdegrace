@@ -13,15 +13,15 @@ const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-    // className={cn("w-[40vw] inset-x-0 mx-auto z-50 p-2 font-sans", className)}
-    className={cn("fixed w-[40vw] top-10 left-1/2 transform -translate-x-1/2 z-50 p-5 font-sans", className)}
+      className={cn("w-[40vw] inset-x-0 mx-auto z-50 p-2 font-sans", className)}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="home">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/#start">bring me to the start</HoveredLink>
-            <HoveredLink href="/#second">continue</HoveredLink>
-            <HoveredLink href="/#end">end</HoveredLink>
+            <HoveredLink href="/">bring me to the start</HoveredLink>
+            <HoveredLink href="/interface-design">second part</HoveredLink>
+            <HoveredLink href="/seo">third part</HoveredLink>
+            <HoveredLink href="/branding">end</HoveredLink>
           </div>
         </MenuItem>
         {/* <MenuItem setActive={setActive} active={active} item="run">
@@ -33,11 +33,10 @@ const Navbar = ({ className }: { className?: string }) => {
         <HoveredLink href="/upload">run</HoveredLink>
         <MenuItem setActive={setActive} active={active} item="learn">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/learn/#introduction">begin</HoveredLink>
-            <HoveredLink href="/learn/#webdev">web development</HoveredLink>
-            <HoveredLink href="/learn/#dataprep">data preprocessing</HoveredLink>
-            <HoveredLink href="/learn/#modelbuild">model building</HoveredLink>
-            <HoveredLink href="/learn/#visua">visualization</HoveredLink>
+            <HoveredLink href="/upload">web development</HoveredLink>
+            <HoveredLink href="/download">data preprocessing</HoveredLink>
+            <HoveredLink href="/download">model building</HoveredLink>
+            <HoveredLink href="/download">visualization</HoveredLink>
           </div>
         </MenuItem>
         {/* <HoveredLink href="/niiviewer">viewer</HoveredLink> */}

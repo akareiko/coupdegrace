@@ -6,7 +6,7 @@ import tissue from "@/app/resources/tissue.jpg"
 
 const HeroScrollDemo = () => {
   return (
-    <div className="flex flex-col overflow-hidden" id="start">
+    <div className="flex flex-col overflow-hidden">
       <ContainerScroll
         titleComponent={
           <>

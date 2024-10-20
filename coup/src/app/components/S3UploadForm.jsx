@@ -66,13 +66,13 @@ const UploadForm = () => {
 
   return (
     <div>
-      <h1 className="text-white font-sans">Process</h1>
+      <h1 className="text-white">Upload Files to S3 Bucket</h1>
       <MyDropzone onFileSelect={handleFileSelect} />
       <form onSubmit={handleSubmit}>
         <button
           type="submit"
           disabled={!file || uploading}
-          className={`mt-4 px-4 py-2 text-white font-sans ${
+          className={`mt-4 px-4 py-2 text-white ${
             !file || uploading ? "bg-gray-400" : "bg-blue-500"
           } rounded`}
         >
@@ -83,7 +83,7 @@ const UploadForm = () => {
       <div className="mt-4">
         {images.length > 0 && (
           <div>
-            <h2 className="text-white font-sans">Processed Images:</h2>
+            <h2 className="text-white">Processed Images:</h2>
             <div className="grid grid-cols-3 gap-4">
               {images.map((image, index) => (
                 // <img key={index} src={image} alt={`Processed image ${index + 1}`} className="w-full h-auto" />

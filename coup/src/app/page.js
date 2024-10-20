@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { Vortex } from "@/app/components/vortex";
 import HeroScrollDemo from "@/app/components/scroll";
 import LayoutGridDemo from "@/app/components/bento";
-import ReportIntro from "@/app/components/third-item-main"
 
 export default function Home() {
   useEffect(() => {
@@ -57,7 +56,6 @@ export default function Home() {
       <br></br>
       <HeroScrollDemo />
       <LayoutGridDemo />
-      <ReportIntro />
     </main>
   );
 }

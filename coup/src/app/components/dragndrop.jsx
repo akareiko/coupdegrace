@@ -24,7 +24,7 @@ const MyDropzone = ({ onFileSelect }) => {
       {isDragActive ? (
         <p className="text-white">Drop the files here ...</p>
       ) : (
-        <p className="text-white font-sans">Drag 'n' drop a .nii file here, or click to select files</p>
+        <p className="text-white">Drag 'n' drop a .nii file here, or click to select files</p>
       )}
       {error && <p className="text-red-500">{error}</p>} {/* Display error message */}
     </div>
