@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
   
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black; /* Set background color to black */
+  }
+  
+  * {
+    box-sizing: border-box; /* Include padding and border in width and height */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+  }

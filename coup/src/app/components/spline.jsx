@@ -2,8 +2,8 @@ import Spline from '@splinetool/react-spline';
 
 const Kek = () => {
   return (
-    <div>
-      <Spline scene="https://prod.spline.design/VUaoulRTLWluP7Ir/scene.splinecode"/>
+    <div className="rounded-lg overflow-hidden">
+      <Spline scene="https://prod.spline.design/CIk9cH78StPdJsKl/scene.splinecode"/>
     </div>
   );
 };
