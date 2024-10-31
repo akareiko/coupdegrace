@@ -29,7 +29,7 @@ const ThreeDCardDemoThree = () => {
   
     try {
       // Send a POST request to the server
-      const response = await fetch('http://43.201.250.98/send-verification', {
+      const response = await fetch('http://54.180.162.4/send-verification', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userData)
@@ -60,7 +60,7 @@ const ThreeDCardDemoThree = () => {
 
     try {
       // Send POST request to backend to verify the code
-      const response = await axios.post('http://43.201.250.98/verify-code', { email, code });
+      const response = await axios.post('http://54.180.162.4/verify-code', { email, code });
       setMessage(response.data.message);
       setIsVerified(true); // Mark as verified if successful
     } catch (error) {

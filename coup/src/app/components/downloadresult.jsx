@@ -17,8 +17,8 @@ const FileGallery = () => {
     <div>
       <h2>Images:</h2>
       <div className="grid grid-cols-3 gap-4">
-        {staticImages.length > 0 ? (
-          staticImages.map((imageObj, index) => (
+        {files.images.length > 0 ? (
+          files.images.map((imageObj, index) => (
             <CardContainer className="inter-var" key={index}>
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[27rem] h-auto rounded-xl p-6 border">
                 <CardItem
@@ -61,6 +61,14 @@ const FileGallery = () => {
           <p>No other files available.</p>
         )}
       </ul>
+      <h2>Embedded Content:</h2>
+      <iframe
+        src="https://coupnii.vercel.app/" // Replace with the URL you want to embed
+        width="100%" // Use 100% to make it responsive
+        height="500px" // Adjust height as needed
+        className="border border-gray-300 rounded-lg" // Optional styling
+        title="Embedded Content"
+      />
     </div>
   );
 };

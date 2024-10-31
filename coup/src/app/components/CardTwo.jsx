@@ -28,7 +28,7 @@ const ThreeDCardDemoTwo = () => {
   
     try {
       // Send a POST request to the server
-      const response = await fetch('http://43.201.250.98/register', {
+      const response = await fetch('http://54.180.162.4/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userData)

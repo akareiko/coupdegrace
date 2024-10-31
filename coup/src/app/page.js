@@ -15,7 +15,7 @@ export default function Home() {
       }
 
       try {
-        const response = await fetch('http://43.201.250.98/registeranon', {
+        const response = await fetch('http://54.180.162.4/registeranon', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
