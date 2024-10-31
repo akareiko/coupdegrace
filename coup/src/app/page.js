@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from 'react';
-import { Vortex } from "@/app/components/vortex";
 import HeroScrollDemo from "@/app/components/scroll";
 import LayoutGridDemo from "@/app/components/bento";
 import ReportIntro from "@/app/components/third-item-main"
@@ -9,7 +8,6 @@ import ReportIntro from "@/app/components/third-item-main"
 export default function Home() {
   useEffect(() => {
     const registeranon = async () => {
-      // Check if UID already exists in localStorage; if so, skip registration
       const storedUid = localStorage.getItem('anonymousUserId');
       if (storedUid) {
         console.log('Anonymous user ID already exists:', storedUid);
@@ -46,15 +44,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5">
-      <br></br>
-      <br></br>
-      <br></br>
+    <main>
       <button onClick={clearLocalStorage}>Clear Anonymous User ID</button>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <HeroScrollDemo />
       <LayoutGridDemo />
       <ReportIntro />

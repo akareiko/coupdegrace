@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "@/app/components/layout-grid";
+import heh from "@/app/resources/asdasd.jpg"
 
 const LayoutGridDemo = () => {
   return (
@@ -87,7 +88,7 @@ const cards = [
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://i.pinimg.com/564x/3b/79/d1/3b79d11f974a61b66f5b762525e663e2.jpg",
+      "https://i.pinimg.com/1200x/02/51/33/025133c4bef11872b9c8b45ed75f6e5c.jpg",
   },
   {
     id: 3,
@@ -101,6 +102,6 @@ const cards = [
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://i.pinimg.com/564x/91/1f/48/911f4809d3063a618b53f02d8b9f370e.jpg",
+      "https://static.scientificamerican.com/sciam/cache/file/E6AEDA9A-A91E-45C2-977EAA3C3185D55E_source.jpg",
   },
 ];

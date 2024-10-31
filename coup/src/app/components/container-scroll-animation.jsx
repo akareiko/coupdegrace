@@ -29,7 +29,7 @@ export const ContainerScroll = ({
 
   const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
   return (
     (<div
@@ -41,6 +41,7 @@ export const ContainerScroll = ({
           perspective: "1000px",
         }}>
         <Header translate={translate} titleComponent={titleComponent} />
+        <br></br><br></br><br></br><br></br>
         <Card rotate={rotate} translate={translate} scale={scale}>
           {children}
         </Card>

@@ -15,7 +15,7 @@ const Navbar = ({ className }: { className?: string }) => {
     <div
       className={cn("flex justify-center w-full z-50 p-2 font-sans", className)}
     >
-      <div className="w-[30vw]">
+      <div className="w-[20vw]">
         <Menu setActive={setActive}>
           <MenuItem setActive={setActive} active={active} item="home">
             <div className="flex flex-col space-y-4 text-sm">
@@ -38,7 +38,6 @@ const Navbar = ({ className }: { className?: string }) => {
               <HoveredLink href="/learn/#visua">visualization</HoveredLink>
             </div>
           </MenuItem>
-          <HoveredLink href="/visualization">visualization</HoveredLink>
           <HoveredLink href="/signin">profile</HoveredLink>
         </Menu>
       </div>
