@@ -42,7 +42,7 @@ export const MenuItem = ({
                 <motion.div
                   // layout ensures smooth animation
                   layout
-                  className="w-max h-full p-4">
+                  className="w-max h-full p-2">
                   {children}
                 </motion.div>
               </motion.div>

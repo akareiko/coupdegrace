@@ -22,9 +22,9 @@ const MyDropzone = ({ onFileSelect }) => {
     <div {...getRootProps()} className="w-[40vw] bg-black rounded-2xl border-2 border-white border-dashed p-5 h-[10vh] flex justify-center items-center text-center">
       <input {...getInputProps()} />
       {isDragActive ? (
-        <p className="text-white">Drop the files here ...</p>
+        <p className="text-white">drop the files here ...</p>
       ) : (
-        <p className="text-white font-sans">Drag 'n' drop a .nii file here, or click to select files</p>
+        <p className="text-white font-sans">drag 'n' drop a .nii file here, or click to select files</p>
       )}
       {error && <p className="text-red-500">{error}</p>} {/* Display error message */}
     </div>
