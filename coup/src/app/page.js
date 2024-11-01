@@ -15,7 +15,7 @@ export default function Home() {
       }
 
       try {
-        const response = await fetch('https://54.180.162.4/registeranon', {
+        const response = await fetch('https://coupte.org/registeranon', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

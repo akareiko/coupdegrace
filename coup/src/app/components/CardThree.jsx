@@ -29,7 +29,7 @@ const ThreeDCardDemoThree = () => {
   
     try {
       // Send a POST request to the server
-      const response = await fetch('https://54.180.162.4/send-verification', {
+      const response = await fetch('https://coupte.org/send-verification', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userData)
@@ -60,7 +60,7 @@ const ThreeDCardDemoThree = () => {
 
     try {
       // Send POST request to backend to verify the code
-      const response = await axios.post('https://54.180.162.4/verify-code', { email, code });
+      const response = await axios.post('https://coupte.org/verify-code', { email, code });
       setMessage(response.data.message);
       setIsVerified(true); // Mark as verified if successful
     } catch (error) {

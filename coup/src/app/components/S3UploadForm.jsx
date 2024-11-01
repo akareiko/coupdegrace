@@ -43,7 +43,7 @@ const UploadForm = () => {
     formData.append("uid", uid); // Add UID to the form data
 
     try {
-      const response = await fetch("https://54.180.162.4/upload", {
+      const response = await fetch("https://coupte.org/upload", {
         method: "POST",
         body: formData,
       });
